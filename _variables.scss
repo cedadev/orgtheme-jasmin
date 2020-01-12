@@ -17,23 +17,25 @@ $gray-800: #343a40 !default;
 $gray-900: #212529 !default;
 $black:    #000 !default;
 
-$blue:    #00638e !default;
-$indigo:  #6610f2 !default;
-$purple:  #6f42c1 !default;
-$pink:    #e83e8c !default;
+$blue:    #003088 !default;
+$blue2:   #1E5DF8 !default;
+$indigo:  #8A1A9B !default;
+$purple:  #923D9D !default;
+$pink:    #CB3564 !default;
 $red:     #E74C3C !default;
-$orange:  #fd7e14 !default;
-$yellow:  #F39C12 !default;
-$green:   #bcbe00 !default;
-$teal:    #20c997 !default;
-$cyan:    #00a2c3 !default;
+$orange:  #FF6900 !default;
+$yellow:  #FBBB10 !default;
+$green:   #67C04D !default;
+$green2:  #3E863E !default;
+$teal:    #16978A !default;
+$cyan:    #008AAD !default;
 
-$primary:       $cyan !default;
+$primary:       $blue !default;
 $secondary:     $green !default;
-$success:       $blue !default;
-$info:          $teal !default;
+$success:       $green2 !default;
+$info:          $blue2 !default;
 $warning:       $yellow !default;
-$danger:        $red !default;
+$danger:        $orange !default;
 $light:         $gray-200 !default;
 $dark:          $gray-700 !default;
 
@@ -111,3 +113,9 @@ $list-group-disabled-bg:            $gray-200 !default;
 
 $close-color:                       $white !default;
 $close-text-shadow:                 none !default;
+
+// Border radius
+
+$border-radius-base:        0px !default;
+$border-radius-large:       0px !default;
+$border-radius-small:       0px !default;
