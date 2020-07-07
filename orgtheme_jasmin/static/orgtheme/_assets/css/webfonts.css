@@ -1,1 +1,24 @@
-body { font-family: BoosterNextFY-Regular; }
+body { 
+    font-family: BoosterNextFY-Regular; /* not sure this is needed now */
+    font-weight: 900;
+}
+
+b, strong {
+    font-family: BoosterNextFY-Bold;
+    font-weight: normal;
+    font-style: normal;
+}
+
+th {
+    font-family: "BoosterNextFY-Bold";
+}
+
+.font-weight-bold {
+    font-family: BoosterNextFY-Bold;
+    font-weight: 700 !important;
+}
+
+.font-weight-bolder {
+    font-family: BoosterNextFY-Bold;
+    font-weight: 900 !important;
+}
