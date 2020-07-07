@@ -1,4 +1,4 @@
-// Flatly 4.0.0
+// Flatly 4.5.0
 // Bootswatch
 
 //
@@ -30,22 +30,24 @@ $green2:  #3E863E !default;
 $teal:    #16978A !default;
 $cyan:    #008AAD !default;
 
-$primary:       $blue !default;
-$secondary:     $green !default;
-$success:       $green2 !default;
-$info:          $blue2 !default;
+$primary:       $green !default;
+$secondary:     $blue !default;
+$success:       $blue2 !default;
+$info:          $green2 !default;
 $warning:       $yellow !default;
 $danger:        $orange !default;
 $light:         $gray-200 !default;
 $dark:          $gray-700 !default;
 
+$yiq-contrasted-threshold:  175 !default;
+
 // Links
 
-$link-color:                $success !default;
+$link-color:                $secondary !default;
 
 // Fonts
 
-$font-family-sans-serif:      "BoosterNextFY-Medium", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !default;
+$font-family-sans-serif:      "BoosterNextFY-Regular", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !default;
 
 $font-size-base:              0.9375rem !default;
 
@@ -76,7 +78,7 @@ $nav-tabs-border-color:             $gray-200 !default;
 $navbar-padding-y:                  1rem !default;
 
 $navbar-dark-color:                 $white !default;
-$navbar-dark-hover-color:           $green !default;
+$navbar-dark-hover-color:           $green2 !default;
 
 $navbar-light-hover-color:          $blue !default;
 
