@@ -5,7 +5,9 @@ b, strong {
 }
 
 th {
-    font-family: "BoosterNextFY-Bold";
+    font-family: BoosterNextFY-Bold;
+    font-weight: normal;
+    font-style: normal;
 }
 
 .font-weight-bold {
