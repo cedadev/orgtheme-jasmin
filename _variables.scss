@@ -17,33 +17,76 @@ $gray-800: #343a40 !default;
 $gray-900: #212529 !default;
 $black:    #000 !default;
 
-$blue:    #003088 !default;
-$blue2:   #1E5DF8 !default;
-$indigo:  #8A1A9B !default;
-$purple:  #923D9D !default;
-$pink:    #CB3564 !default;
-$red:     #E74C3C !default;
-$orange:  #FF6900 !default;
-$yellow:  #FBBB10 !default;
-$green:   #67C04D !default;
-$green2:  #3E863E !default;
-$teal:    #16978A !default;
-$cyan:    #008AAD !default;
+// UKRI palette https://www.ukri.org/about-us/brand-guidelines/ page 26
+// 1. full palette
+// a. ukri blue
+$ukri_blue:                 #2E2D62 !default;
 
-$primary:       $green !default;
-$secondary:     $blue !default;
-$success:       $blue2 !default;
-$info:          $green2 !default;
-$warning:       $yellow !default;
-$danger:        $orange !default;
-$light:         $gray-200 !default;
-$dark:          $gray-700 !default;
+// b. ukri bright palette   $ukri__:         # !default;
+$ukri_bright_orange:        #FF6900 !default;
+$ukri_bright_ochre:         #FF9D1B !default;
+$ukri_bright_yellow:        #FBBB10 !default;
+$ukri_bright_green1:        #67C04D !default;
+$ukri_bright_green2:        #00A788 !default;
+$ukri_bright_green3:        #34D5AE !default;
+$ukri_bright_blue1:         #00BED5 !default;
+$ukri_bright_blue2:         #1E5DF8 !default;
+$ukri_bright_pink:          #E355EC !default;
+$ukri_bright_mauve:         #BE2BBB !default;
+$ukri_bright_red1:          #FF5A5A !default;
+$ukri_bright_red2:          #E94D36 !default;
+
+// c. ukri deep palette
+$ukri_deep_orange:          #C13D33 !default;
+$ukri_deep_ochre:           #D77900 !default;
+$ukri_deep_yellow:          #F08900 !default;
+$ukri_deep_green1:          #3E863E !default;
+$ukri_deep_green2:          #005E54 !default;
+$ukri_deep_green3:          #16978A !default;
+$ukri_deep_blue1:           #008AAD !default;
+$ukri_deep_blue2:           #003088 !default;
+$ukri_deep_pink:            #923D9D !default;
+$ukri_deep_mauve:           #8A1A9B !default;
+$ukri_deep_red1:            #CB3564 !default;
+$ukri_deep_red2:            #A91B2E !default;
+
+// d. ukri neutral palette
+$ukri_neutral_grey:         #676767 !default;
+
+// 2. UKRI condensed highlight palette
+$ukri_condensed_ochre:      $ukri_bright_ochre !default;
+$ukri_condensed_yellow:     $ukri_bright_yellow !default;
+$ukri_condensed_green1:     $ukri_bright_green1 !default;
+$ukri_condensed_green2:     $ukri_bright_green2 !default;
+$ukri_condensed_blue1:      $ukri_bright_blue1 !default;
+$ukri_condensed_blue2:      $ukri_bright_blue2 !default;
+$ukri_condensed_mauve:      $ukri_bright_mauve !default;
+$ukri_condensed_red:        $ukri_bright_red2 !default
+
+// UKRI JASMIN assignment
+
+$primary:       $ukri_bright_green1 !default;
+$secondary:     $ukri_deep_green1 !default;
+
+$success:       $ukri_deep_blue2 !default;
+$info:          $ukri_bright_blue2 !default;
+$warning:       $ukri_bright_orange !default;
+$danger:        $ukri_deep_red2 !default;
+
+$light:         $gray-500 !default;
+$dark:          $ukri_blue !default;
+
+// Options
+
+$enable-rounded: false !default;
 
 $yiq-contrasted-threshold:  175 !default;
 
 // Links
 
-$link-color:                $secondary !default;
+$link-color:                $secondary !default; //was $success
+
+$body-color:                $ukri_blue !default;
 
 // Fonts
 
@@ -63,7 +106,7 @@ $table-accent-bg:             $gray-200 !default;
 
 $dropdown-link-color:               $gray-700 !default;
 $dropdown-link-hover-color:         $white !default;
-$dropdown-link-hover-bg:            $green !default;
+$dropdown-link-hover-bg:            $primary !default;
 
 // Navs
 
@@ -78,32 +121,25 @@ $nav-tabs-border-color:             $gray-200 !default;
 $navbar-padding-y:                  1rem !default;
 
 $navbar-dark-color:                 $white !default;
-$navbar-dark-hover-color:           $green2 !default;
-
-$navbar-light-hover-color:          $blue !default;
+$navbar-dark-hover-color:           $success !default;
 
 // Pagination
 
 $pagination-color:                  $white !default;
-$pagination-bg:                     $green !default;
+$pagination-bg:                     $primary !default;
 $pagination-border-width:           0 !default;
 $pagination-border-color:           transparent !default;
 
 $pagination-hover-color:            $white !default;
-$pagination-hover-bg:               darken($green, 15%) !default;
+$pagination-hover-bg:               $secondary !default;
 $pagination-hover-border-color:     transparent !default;
 
 $pagination-active-bg:              $pagination-hover-bg !default;
 $pagination-active-border-color:    transparent !default;
 
-$pagination-disabled-color:         $green !default;
-$pagination-disabled-bg:            lighten($green, 5%)  !default;
+$pagination-disabled-color:         $gray-400 !default;
+$pagination-disabled-bg:            $gray-500 !default;
 $pagination-disabled-border-color:  transparent !default;
-
-// Progress bars
-
-$progress-height:                   10px !default;
-$progress-font-size:                10px !default;
 
 // List group
 
