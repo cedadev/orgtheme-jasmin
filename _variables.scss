@@ -65,10 +65,10 @@ $ukri_condensed_red:        $ukri_bright_red2 !default
 
 // UKRI JASMIN assignment
 
-$primary:       $ukri_bright_green1 !default;
+$primary:       $ukri_deep_blue2 !default;
 $secondary:     $ukri_deep_green1 !default;
 
-$success:       $ukri_deep_blue2 !default;
+$success:       $ukri_bright_green1 !default;
 $info:          $ukri_bright_blue2 !default;
 $warning:       $ukri_bright_orange !default;
 $danger:        $ukri_deep_red2 !default;
@@ -101,12 +101,13 @@ $h3-font-size:                2rem !default;
 // Tables
 
 $table-accent-bg:             $gray-200 !default;
+$table-hover-color:           $gray-700;
 
 // Dropdowns
 
 $dropdown-link-color:               $gray-700 !default;
 $dropdown-link-hover-color:         $white !default;
-$dropdown-link-hover-bg:            $primary !default;
+$dropdown-link-hover-bg:            $success !default;
 
 // Navs
 
@@ -121,7 +122,7 @@ $nav-tabs-border-color:             $gray-200 !default;
 $navbar-padding-y:                  1rem !default;
 
 $navbar-dark-color:                 $white !default;
-$navbar-dark-hover-color:           $success !default;
+$navbar-dark-hover-color:           $dark !default;
 
 // Pagination
 
