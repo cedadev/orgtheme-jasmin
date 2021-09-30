@@ -1,0 +1,13 @@
+//@import "../node_modules/bootswatch/dist/flatly/variables";
+
+// Custom variable overrides.
+@import "variables.scss";
+
+// Bootstrap required.
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+// Bootswatch main
+@import "../node_modules/bootswatch/dist/flatly/bootswatch";
+
+// Custom styles.
+@import "custom.scss";

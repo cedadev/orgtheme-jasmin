@@ -18,3 +18,8 @@ $ source ./venv/bin/activate
 $ pip install git+https://github.com/cedadev/orgtheme-jasmin.git
 ```
 It is intended to be used as a building bock for subsequent framework (e.g. Django) and individual application customisations.
+
+# Building/Upgrading
+* Install the dependencies with `npm install`.
+* Bump the theme version in package.json.
+* Run `npm run build` to compile the sass to css.
