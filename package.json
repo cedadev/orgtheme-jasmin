@@ -17,6 +17,7 @@
   },
   "scripts": {
     "build": "npm run css",
+    "watch": "npm run css-compile -- -w",
     "css-compile": "node-sass --include-path node_modules --output-style compressed --source-map true --source-map-contents true --precision 6 scss/main.scss -o ${npm_package_config_outputpath}/${npm_package_version}",
     "css-prefix": "postcss --replace ${npm_package_config_outputpath}/${npm_package_version}/main.css --use autoprefixer --map",
     "css": "npm-run-all css-compile css-prefix"

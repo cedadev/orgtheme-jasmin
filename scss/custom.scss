@@ -1,6 +1,36 @@
-/* Org customisations of Grunt-produced theme */
-
-/* Change padding of top navbar to avoid overlapping page title text. Only for fixed-top navbar */
-.navbar.fixed-top {
+// Reduce the thickness of the navbar.
+.navbar.sticky-top {
     padding: 4px 4px;
+}
+
+// Create a "steps" indicator. 
+// This should be a list element, and will render
+// accross the screen with arrows.
+.steps {
+    @extend .pagination;
+    align-items: stretch;
+
+    li {
+        flex: auto;
+        position: relative;
+        padding: $pagination-padding-y $pagination-padding-x;
+        text-align: center;
+        color: $pagination-color;
+        background-color: $pagination-bg;
+        border: $pagination-border-width solid $pagination-border-color;
+
+        // Add a right arrow to the elements.
+        &:not(:last-child):after{
+            content: "";
+            position: absolute;
+            right: -2rem;
+            height: 0px;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+            border: 1rem solid transparent;
+            border-left-color: #fff;
+            z-index: 2;
+        }
+    }
 }
