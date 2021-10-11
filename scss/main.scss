@@ -2,7 +2,7 @@
 @import "../node_modules/bootstrap/scss/functions";
 
 // Custom variable overrides.
-@import "variables.scss";
+@import "variables";
 
 // Bootstrap Configuration.
 @import "../node_modules/bootstrap/scss/variables";
@@ -52,4 +52,4 @@
 @import "../node_modules/bootswatch/dist/flatly/bootswatch";
 
 // Custom styles.
-@import "custom.scss";
+@import "custom";

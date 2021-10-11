@@ -13,13 +13,34 @@
     "node-sass": "^6.0.1",
     "npm-run-all": "^4.1.5",
     "postcss": "^8.3.8",
-    "postcss-cli": "^9.0.1"
+    "postcss-cli": "^9.0.1",
+    "vendor-copy": "^3.0.1"
   },
+  "vendorCopy": [
+    {
+      "from": "node_modules/bootstrap/dist/js/bootstrap.bundle.js",
+      "to": "orgtheme_jasmin/static/orgtheme/_vendor/js/bootstrap.bundle.js"
+    },
+    {
+      "from": "node_modules/bootstrap/dist/js/bootstrap.bundle.js.map",
+      "to": "orgtheme_jasmin/static/orgtheme/_vendor/js/bootstrap.bundle.js.map"
+    }
+  ],
   "scripts": {
-    "build": "npm run css",
-    "watch": "npm run css-compile -- -w",
-    "css-compile": "node-sass --include-path node_modules --output-style compressed --source-map true --source-map-contents true --precision 6 scss/main.scss -o ${npm_package_config_outputpath}/${npm_package_version}",
-    "css-prefix": "postcss --replace ${npm_package_config_outputpath}/${npm_package_version}/main.css --use autoprefixer --map",
-    "css": "npm-run-all css-compile css-prefix"
+    "watch-css": "npm run css-compile -- -w",
+    "css-compile": "node-sass --include-path node_modules --output-style compressed --source-map true --source-map-contents true --precision 6 scss/main.scss -o orgtheme_jasmin/static/orgtheme/${npm_package_version}",
+    "css-prefix": "postcss --replace orgtheme_jasmin/static/orgtheme/${npm_package_version}/main.css --use autoprefixer --map",
+    "build-css": "npm-run-all css-compile css-prefix",
+
+    "copy-assets": "cp -r orgtheme_jasmin/static/orgtheme/_assets build/assets",
+    "vendor": "rm -rf orgtheme_jasmin/static/orgtheme/_vendor && vendor-copy",
+
+    "copy-vendor": "cp -r orgtheme_jasmin/static/orgtheme/_vendor build/vendor",
+    "make-build-dir": "rm -rf build && mkdir -p build",
+
+    "copy-dist": "cp -r orgtheme_jasmin/static/orgtheme/${npm_package_version} build/${npm_package_version}",
+    "copy-demo": "cp -r orgtheme_jasmin/static/orgtheme/demo build/demo",
+
+    "build": "npm-run-all make-build-dir build-css vendor copy-assets copy-vendor copy-dist copy-demo"
   }
 }

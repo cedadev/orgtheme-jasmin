@@ -1,6 +1,6 @@
 # orgtheme-jasmin
 
-Bootstrap 4 organisation theme (colour scheme) for JASMIN web components.
+Bootstrap 5 organisation theme (colour scheme) for JASMIN web components.
 
 The demo page demo/index.html provides examples of typography, layout styles and functional elements which can be used to construct templates.
 
@@ -22,4 +22,4 @@ It is intended to be used as a building bock for subsequent framework (e.g. Djan
 # Building/Upgrading
 * Install the dependencies with `npm install`.
 * Bump the theme version in package.json.
-* Run `npm run build` to compile the sass to css.
+* Run `npm run build` to make build of the theme in /build, including compiled sass, assests and vendored dependencies.
