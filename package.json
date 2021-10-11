@@ -20,12 +20,12 @@
   },
   "vendorCopy": [
     {
-      "from": "node_modules/bootstrap/dist/js/bootstrap.bundle.js",
-      "to": "orgtheme_jasmin/static/orgtheme/_vendor/js/bootstrap.bundle.js"
+      "from": "node_modules/bootstrap/dist/js/bootstrap.bundle.min.js",
+      "to": "orgtheme_jasmin/static/orgtheme/_vendor/js/bootstrap.bundle.min.js"
     },
     {
-      "from": "node_modules/bootstrap/dist/js/bootstrap.bundle.js.map",
-      "to": "orgtheme_jasmin/static/orgtheme/_vendor/js/bootstrap.bundle.js.map"
+      "from": "node_modules/bootstrap/dist/js/bootstrap.bundle.min.js.map",
+      "to": "orgtheme_jasmin/static/orgtheme/_vendor/js/bootstrap.bundle.min.js.map"
     },
     {
       "from": "node_modules/jquery/dist/jquery.min.js",
