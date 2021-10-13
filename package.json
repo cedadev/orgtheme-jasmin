@@ -8,6 +8,7 @@
     "bootstrap": "^5.1.1",
     "bootstrap-select": "^1.14.0-beta2",
     "bootswatch": "^5.1.1",
+    "easymde": "^2.15.0",
     "jquery": "^3.6.0"
   },
   "devDependencies": {
@@ -52,7 +53,6 @@
       "from": "node_modules/bootstrap-select/dist/css/bootstrap-select.css.map",
       "to": "orgtheme_jasmin/static/orgtheme/_vendor/css/bootstrap-select.css.map"
     },
-
     {
       "from": "node_modules/@fortawesome/fontawesome-free/webfonts",
       "to": "orgtheme_jasmin/static/orgtheme/_vendor/webfonts"
@@ -60,6 +60,14 @@
     {
       "from": "node_modules/@fortawesome/fontawesome-free/css/all.min.css",
       "to": "orgtheme_jasmin/static/orgtheme/_vendor/css/fontawesome-all.min.css"
+    },
+    {
+      "from": "node_modules/easymde/dist/easymde.min.js",
+      "to": "orgtheme_jasmin/static/orgtheme/_vendor/js/easymde.min.js"
+    },
+    {
+      "from": "node_modules/easymde/dist/easymde.min.css",
+      "to": "orgtheme_jasmin/static/orgtheme/_vendor/css/easymde.min.css"
     }
   ],
   "scripts": {
