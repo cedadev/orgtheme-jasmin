@@ -72,14 +72,14 @@
   ],
   "scripts": {
     "watch-css": "npm run css-compile -- -w",
-    "css-compile": "node-sass --include-path node_modules --output-style compressed --source-map true --source-map-contents true --precision 6 scss/main.scss -o orgtheme_jasmin/static/orgtheme/${npm_package_version}",
-    "css-prefix": "postcss --replace orgtheme_jasmin/static/orgtheme/${npm_package_version}/main.css --use autoprefixer --map",
+    "css-compile": "node-sass --include-path node_modules --output-style compressed --source-map true --source-map-contents true --precision 6 scss/main.scss -o orgtheme_jasmin/static/orgtheme/theme/css",
+    "css-prefix": "postcss --replace orgtheme_jasmin/static/orgtheme/theme/css/main.css --use autoprefixer --map",
     "build-css": "npm-run-all css-compile css-prefix",
-    "copy-assets": "cp -r orgtheme_jasmin/static/orgtheme/_assets build/_assets",
+    "copy-assets": "cp -r orgtheme_jasmin/static/orgtheme/assets build/assets",
     "vendor": "rm -rf orgtheme_jasmin/static/orgtheme/_vendor && vendor-copy",
-    "copy-vendor": "cp -r orgtheme_jasmin/static/orgtheme/_vendor build/_vendor",
+    "copy-vendor": "cp -r orgtheme_jasmin/static/orgtheme/vendor build/vendor",
     "make-build-dir": "rm -rf build && mkdir -p build",
-    "copy-dist": "cp -r orgtheme_jasmin/static/orgtheme/${npm_package_version} build/${npm_package_version}",
+    "copy-dist": "cp -r orgtheme_jasmin/static/orgtheme/theme build/theme",
     "copy-demo": "cp -r orgtheme_jasmin/static/orgtheme/demo build/demo",
     "build": "npm-run-all make-build-dir build-css vendor copy-assets copy-vendor copy-dist copy-demo"
   }
