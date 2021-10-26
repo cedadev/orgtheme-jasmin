@@ -1,0 +1,12 @@
+// Create stoke color classes for all the bootstrap theme colors.
+@each $name, $color in $theme-colors {
+  .stroke-#{$name} {
+    stroke: $color;
+  }
+}
+
+// Create a class to fully center text in an svg.
+.svg-text-center {
+  dominant-baseline: middle;
+  text-anchor: middle;
+}
