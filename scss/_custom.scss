@@ -40,3 +40,10 @@
 .site-footer {
   background-color: $gray-200;
 }
+
+// Create stoke color classes for all the bootstrap theme colors.
+@each $name, $color in $theme-colors {
+  .stroke-#{$name} {
+    stroke: $color;
+  }
+}
