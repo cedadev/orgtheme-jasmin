@@ -23,51 +23,51 @@
   "vendorCopy": [
     {
       "from": "node_modules/bootstrap/dist/js/bootstrap.bundle.min.js",
-      "to": "orgtheme_jasmin/static/orgtheme/_vendor/js/bootstrap.bundle.min.js"
+      "to": "orgtheme_jasmin/static/orgtheme/vendor/js/bootstrap.bundle.min.js"
     },
     {
       "from": "node_modules/bootstrap/dist/js/bootstrap.bundle.min.js.map",
-      "to": "orgtheme_jasmin/static/orgtheme/_vendor/js/bootstrap.bundle.min.js.map"
+      "to": "orgtheme_jasmin/static/orgtheme/vendor/js/bootstrap.bundle.min.js.map"
     },
     {
       "from": "node_modules/jquery/dist/jquery.min.js",
-      "to": "orgtheme_jasmin/static/orgtheme/_vendor/js/jquery.min.js"
+      "to": "orgtheme_jasmin/static/orgtheme/vendor/js/jquery.min.js"
     },
     {
       "from": "node_modules/jquery/dist/jquery.min.map",
-      "to": "orgtheme_jasmin/static/orgtheme/_vendor/js/jquery.min.map"
+      "to": "orgtheme_jasmin/static/orgtheme/vendor/js/jquery.min.map"
     },
     {
       "from": "node_modules/bootstrap-select/dist/js/bootstrap-select.min.js",
-      "to": "orgtheme_jasmin/static/orgtheme/_vendor/js/bootstrap-select.min.js"
+      "to": "orgtheme_jasmin/static/orgtheme/vendor/js/bootstrap-select.min.js"
     },
     {
       "from": "node_modules/bootstrap-select/dist/js/bootstrap-select.min.js.map",
-      "to": "orgtheme_jasmin/static/orgtheme/_vendor/js/bootstrap-select.min.js.map"
+      "to": "orgtheme_jasmin/static/orgtheme/vendor/js/bootstrap-select.min.js.map"
     },
     {
       "from": "node_modules/bootstrap-select/dist/css/bootstrap-select.min.css",
-      "to": "orgtheme_jasmin/static/orgtheme/_vendor/css/bootstrap-select.min.css"
+      "to": "orgtheme_jasmin/static/orgtheme/vendor/css/bootstrap-select.min.css"
     },
     {
       "from": "node_modules/bootstrap-select/dist/css/bootstrap-select.css.map",
-      "to": "orgtheme_jasmin/static/orgtheme/_vendor/css/bootstrap-select.css.map"
+      "to": "orgtheme_jasmin/static/orgtheme/vendor/css/bootstrap-select.css.map"
     },
     {
       "from": "node_modules/@fortawesome/fontawesome-free/webfonts",
-      "to": "orgtheme_jasmin/static/orgtheme/_vendor/webfonts"
+      "to": "orgtheme_jasmin/static/orgtheme/vendor/webfonts"
     },
     {
       "from": "node_modules/@fortawesome/fontawesome-free/css/all.min.css",
-      "to": "orgtheme_jasmin/static/orgtheme/_vendor/css/fontawesome-all.min.css"
+      "to": "orgtheme_jasmin/static/orgtheme/vendor/css/fontawesome-all.min.css"
     },
     {
       "from": "node_modules/easymde/dist/easymde.min.js",
-      "to": "orgtheme_jasmin/static/orgtheme/_vendor/js/easymde.min.js"
+      "to": "orgtheme_jasmin/static/orgtheme/vendor/js/easymde.min.js"
     },
     {
       "from": "node_modules/easymde/dist/easymde.min.css",
-      "to": "orgtheme_jasmin/static/orgtheme/_vendor/css/easymde.min.css"
+      "to": "orgtheme_jasmin/static/orgtheme/vendor/css/easymde.min.css"
     }
   ],
   "scripts": {
@@ -76,7 +76,7 @@
     "css-prefix": "postcss --replace orgtheme_jasmin/static/orgtheme/theme/css/main.css --use autoprefixer --map",
     "build-css": "npm-run-all css-compile css-prefix",
     "copy-assets": "cp -r orgtheme_jasmin/static/orgtheme/assets build/assets",
-    "vendor": "rm -rf orgtheme_jasmin/static/orgtheme/_vendor && vendor-copy",
+    "vendor": "rm -rf orgtheme_jasmin/static/orgtheme/vendor && vendor-copy",
     "copy-vendor": "cp -r orgtheme_jasmin/static/orgtheme/vendor build/vendor",
     "make-build-dir": "rm -rf build && mkdir -p build",
     "copy-dist": "cp -r orgtheme_jasmin/static/orgtheme/theme build/theme",
