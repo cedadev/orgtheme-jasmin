@@ -72,8 +72,8 @@
   ],
   "scripts": {
     "watch-css": "npm run css-compile -- -w",
-    "css-compile": "node-sass --include-path node_modules --output-style compressed --source-map true --source-map-contents true --precision 6 scss/main.scss -o orgtheme_jasmin/static/orgtheme/theme/css",
-    "css-prefix": "postcss --replace orgtheme_jasmin/static/orgtheme/theme/css/main.css --use autoprefixer --map",
+    "css-compile": "node-sass --include-path node_modules --output-style compressed --source-map true --source-map-contents true --precision 6 scss -o orgtheme_jasmin/static/orgtheme/theme/css",
+    "css-prefix": "postcss --replace orgtheme_jasmin/static/orgtheme/theme/css/*.css --use autoprefixer --map",
     "build-css": "npm-run-all css-compile css-prefix",
     "copy-assets": "cp -r orgtheme_jasmin/static/orgtheme/assets build/assets",
     "vendor": "rm -rf orgtheme_jasmin/static/orgtheme/vendor && vendor-copy",

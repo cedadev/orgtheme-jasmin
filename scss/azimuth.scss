@@ -4,6 +4,10 @@
 // Custom variable overrides for jasmin.
 @import "variables";
 
+//Overrides for Azimuth.
+$primary: $ukri_deep_green1 !default;
+$secondary: $ukri_deep_blue2 !default;
+
 // Main bootstrap and bootswatch.
 @import "components/bootstrap";
 
