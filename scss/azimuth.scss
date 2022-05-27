@@ -5,8 +5,8 @@
 @import "variables";
 
 //Overrides for Azimuth.
-$primary: $ukri_deep_green1 !default;
-$secondary: $ukri_deep_blue2 !default;
+$primary: $ukri_deep_green1;
+$secondary: $ukri_deep_blue2;
 
 // Main bootstrap and bootswatch.
 @import "components/bootstrap";
